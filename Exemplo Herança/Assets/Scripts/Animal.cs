@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Animal : MonoBehaviour
+public abstract class Animal : MonoBehaviour
 {
     
     [SerializeField] protected float velocidadeVertical;
@@ -35,11 +35,9 @@ public class Animal : MonoBehaviour
         
         transform.position = posicao;
     }
+
+    protected abstract void Fala();  // se algum metodo for 'abstract' a classe tem que ser abtract
     
-    protected virtual void Fala()
-    {
-        Debug.Log("O animal diz: ");
-    }
 
     protected virtual void Pula()
     {

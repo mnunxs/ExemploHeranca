@@ -8,7 +8,7 @@ public class Peixe : Animal
 
     protected override void Fala()
     {
-        base.Fala();
+        
         Debug.Log("Peixe: *PEIXE NÃO FALA*");
     }
 }
